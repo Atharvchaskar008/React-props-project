@@ -106,10 +106,11 @@ const App = () => {
   ];
 
   return (
-    <div className="parent"  key={index} >
+    <div className="parent">
        {jobOpenings.map(function(elem, index){
          return (
            <Card 
+             key ={index}
              company={elem.company} 
              brandLogo={elem.brandLogo} 
              datePosted={elem.datePosted} 
